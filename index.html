@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODEC-FoMo: Collaborative, Open, and DECentralized training of Foundation Models &mdash; NeurIPS 2026 Workshop</title>
-    <meta name="description" content="CODEC-FoMo — NeurIPS 2026 Workshop on collaborative, open, and decentralized training of foundation models: communication-efficient and asynchronous optimization, heterogeneous and fault-tolerant systems, and security. December 2026, Sydney, Australia.">
-    <meta property="og:title" content="CODEC-FoMo: Collaborative, Open, and DECentralized training of Foundation Models — NeurIPS 2026 Workshop">
+    <title>CODEC-FM: Collaborative, Open, and DECentralized training of Foundation Models &mdash; NeurIPS 2026 Workshop</title>
+    <meta name="description" content="CODEC-FM — NeurIPS 2026 Workshop on collaborative, open, and decentralized training of foundation models: communication-efficient and asynchronous optimization, heterogeneous and fault-tolerant systems, and security. December 2026, Sydney, Australia.">
+    <meta property="og:title" content="CODEC-FM: Collaborative, Open, and DECentralized training of Foundation Models — NeurIPS 2026 Workshop">
     <meta property="og:description" content="Scaling foundation model training across distributed, heterogeneous compute — from inter-datacenter training to internet-scale collaboration.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://open-collaborative-decentralized-fomo.github.io/">
@@ -229,7 +229,7 @@
             font-family: var(--font-body);
             font-size: clamp(1.05rem, 1.6vw, 1.2rem);
             color: var(--ink-soft);
-            max-width: 52ch;
+            max-width: 60ch;
             margin: 1.75rem 0 0;
             line-height: 1.5;
         }
@@ -390,6 +390,7 @@
             font-size: 0.78rem;
             color: var(--ink-faint);
             letter-spacing: 0.04em;
+            max-width: none;
         }
 
         /* ── People cards ─────────────────────────────────────────────────── */
@@ -591,6 +592,10 @@
             vertical-align: middle;
             margin-right: 0.1rem;
         }
+        .cfp-subsection p,
+        .cfp-subsection li {
+            max-width: none;
+        }
         .cfp-subsection p {
             font-size: 0.97rem;
             line-height: 1.6;
@@ -757,7 +762,7 @@
     <div class="wrap">
         <span class="item">
             <span class="pin">▸</span>
-            <a href="#cfp">Submissions due August 29, 2026 — the OpenReview portal opens soon.</a>
+            <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/CODEC-FM">Submissions due August 29, 2026 — submit on OpenReview →</a>
         </span>
         <span class="item">
             <span class="pin">★</span>
@@ -765,14 +770,14 @@
         </span>
         <span class="item">
             <span class="pin">✉</span>
-            <a href="mailto:benjtherien@gmail.com">benjtherien@gmail.com</a>
+            <a href="mailto:codec-fm-neurips-2026@googlegroups.com">codec-fm-neurips-2026@googlegroups.com</a>
         </span>
     </div>
 </div>
 
 <div class="topbar">
     <div class="wrap">
-        <a class="mark" href="#about">CODEC-FoMo · NeurIPS 2026</a>
+        <a class="mark" href="#about">CODEC-FM · NeurIPS 2026</a>
         <div class="links">
             <a href="#about">About</a>
             <a href="#dates">Dates</a>
@@ -782,7 +787,7 @@
             <a href="#organizers">Organizers</a>
             <a href="#sponsors">Sponsors</a>
         </div>
-        <a class="contact" href="mailto:benjtherien@gmail.com" aria-label="Email the organizers">contact</a>
+        <a class="contact" href="mailto:codec-fm-neurips-2026@googlegroups.com" aria-label="Email the organizers">contact</a>
     </div>
 </div>
 
@@ -793,14 +798,15 @@
             <span class="dot"></span>
             <span>December 11 or 12, 2026</span>
             <span class="dot"></span>
-            <span>ICC Sydney, Australia</span>
+            <span>Sydney, Australia</span>
         </div>
         <h1 class="hero-title">Collaborative, Open, and DECentralized training of Foundation Models</h1>
         <p class="hero-subtitle">
             Scaling foundation model training across distributed, heterogeneous compute — from inter-datacenter training to internet-scale collaboration.
         </p>
         <div class="hero-cta">
-            <a class="primary" href="#cfp">Read the call for papers</a>
+            <a class="primary" href="#cfp">Call for papers</a>
+            <a class="secondary" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/CODEC-FM">Submit on OpenReview ↗</a>
             <a class="secondary" href="https://forms.gle/7nAEEuWHZGBBpXfF8">Volunteer to review ↗</a>
         </div>
     </div>
@@ -822,7 +828,7 @@
                     This concentration of compute creates high barriers to entry, centralizes AI innovation, and limits broader progress in developing and studying frontier-scale foundation models. Decentralization and resource pooling provide a way to enable large-scale runs without these barriers, by training models across geographically distributed and heterogeneous devices — from coordinated <em>inter-datacenter</em> settings to consumer devices collaborating <em>over the internet</em>.
                 </p>
                 <p>
-                    This workshop brings the open-model and decentralized-training communities together around the systems-and-optimization stack required to make permissionless, real-world decentralized training practical: communication efficiency, asynchronous optimization, heterogeneous systems, fault tolerance, and security.
+                    This workshop brings together researchers and practitioners from the open-model and decentralized-training communities to address the core technical challenges of this paradigm, extending foundation model training beyond the confines of a single datacenter and supporting more scalable, collaborative open model development.
                 </p>
             </div>
             <aside class="topics-card">
@@ -836,7 +842,7 @@
                     <li>Federated learning at scale</li>
                     <li>Heterogeneous devices and interconnects</li>
                     <li>Fault tolerance, stragglers, and elasticity</li>
-                    <li>Low-bandwidth data, pipeline, and context parallelism</li>
+                    <li>Parallelism strategies over low-bandwidth interconnects</li>
                     <li>Security and robustness in trustless settings</li>
                     <li>Incentives, governance, and economic models</li>
                     <li>Benchmarks and evaluation</li>
@@ -856,27 +862,27 @@
 
         <div class="dates-table">
             <div class="row">
-                <div class="label">Submission deadline<small>via OpenReview · papers due 23:59 AoE</small></div>
+                <div class="label">Submission deadline</div>
                 <div class="val">August 29, 2026</div>
             </div>
             <div class="row">
-                <div class="label">Reviewing deadline<small>reviews due on OpenReview</small></div>
-                <div class="val">September 22, 2026</div>
+                <div class="label">Reviewing deadline</div>
+                <div class="val">September 19, 2026</div>
             </div>
             <div class="row">
-                <div class="label">Notification of acceptance<small>decisions communicated to authors</small></div>
+                <div class="label">Notification of acceptance</div>
                 <div class="val">September 29, 2026</div>
             </div>
             <div class="row">
-                <div class="label">Camera-ready deadline<small>final manuscript on OpenReview</small></div>
+                <div class="label">Camera-ready deadline</div>
                 <div class="val">TBA</div>
             </div>
             <div class="row">
-                <div class="label">Workshop day<small>NeurIPS 2026 · ICC Sydney, Australia</small></div>
+                <div class="label">Workshop day</div>
                 <div class="val">December 11 or 12, 2026</div>
             </div>
         </div>
-        <p class="dates-foot">All deadlines 23:59 anywhere on Earth. The OpenReview submission portal will be linked here when it opens.</p>
+        <p class="dates-foot">All deadlines are 23:59 anywhere on Earth. Submit via the <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/CODEC-FM">OpenReview portal</a>.</p>
     </div>
 </section>
 
@@ -982,9 +988,11 @@
             <ul>
                 <li><strong>Long papers:</strong> up to 6 pages — eligible for oral presentation</li>
                 <li><strong>Tiny papers:</strong> up to 2 pages — poster presentations only</li>
+                <li>Page limits exclude references and appendix</li>
                 <li>Use the official NeurIPS 2026 LaTeX style files (linked from the <a href="https://neurips.cc/Conferences/2026/CallForPapers">NeurIPS 2026 Call for Papers</a>)</li>
                 <li>All submissions are non-archival</li>
-                <li>Submissions will be managed through OpenReview — the portal will be linked here when it opens</li>
+                <li>All authors are required to have a valid OpenReview profile</li>
+                <li>Submissions are managed through <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/CODEC-FM">OpenReview</a></li>
             </ul>
         </div>
 
@@ -1012,7 +1020,7 @@
 
         <div class="cfp-subsection">
             <h3>Review process</h3>
-            <p>Each submission will receive three reviews, with a cap of three papers per reviewer. Our program committee includes international experts with reviewing experience at top-tier conferences and recent workshops such as MCDC@ICLR'25 and FL@FM-NeurIPS'24. Organizers follow the NeurIPS conflict-of-interest policy: any submission with a conflict involving an organizer will be handled entirely by non-conflicted organizers. Six accepted papers will be selected for oral presentation, and all accepted papers will be presented in the poster session. Full reviewing details, including anonymization requirements, will be announced when the OpenReview portal opens.</p>
+            <p>Reviewing is double blind. Each submission will receive three reviews. Our program committee includes international experts with reviewing experience at top-tier conferences and recent workshops such as MCDC@ICLR'25 and FL@FM-NeurIPS'24. Organizers follow the NeurIPS conflict-of-interest policy. Six accepted papers will be selected for oral presentation, and all accepted papers will be presented in the poster session.</p>
         </div>
 
         <div class="cfp-subsection">
@@ -1036,9 +1044,10 @@
         </div>
 
         <div class="cfp-cta">
-            <p class="cta-text">Submissions are due August 29, 2026. The OpenReview portal opens soon.</p>
+            <p class="cta-text">Submissions are due August 29, 2026.</p>
             <div class="cta-actions">
-                <a class="button" href="mailto:benjtherien@gmail.com?subject=CODEC-FoMo%20NeurIPS%202026%20submission%20question">Email the organizers</a>
+                <a class="button" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/CODEC-FM">Submit on OpenReview ↗</a>
+                <a class="button button-alt" href="mailto:codec-fm-neurips-2026@googlegroups.com?subject=CODEC-FM%20NeurIPS%202026%20submission%20question">Email the organizers</a>
                 <a class="button button-alt" href="https://forms.gle/7nAEEuWHZGBBpXfF8">Volunteer to review ↗</a>
             </div>
         </div>
@@ -1129,7 +1138,7 @@
             <span>Sponsors</span>
             <span class="rule"></span>
         </div>
-        <p class="sponsor-foot">Interested in sponsoring the workshop? <a href="mailto:benjtherien@gmail.com?subject=CODEC-FoMo%20NeurIPS%202026%20sponsorship">Get in touch</a>.</p>
+        <p class="sponsor-foot">Interested in sponsoring the workshop? <a href="mailto:codec-fm-neurips-2026@googlegroups.com?subject=CODEC-FM%20NeurIPS%202026%20sponsorship">Get in touch</a>.</p>
     </div>
 </section>
 
@@ -1145,16 +1154,16 @@
                 <p class="headline">Email the organizers.</p>
                 <p>For submission questions, sponsorship enquiries, accessibility requests, or anything else.</p>
             </div>
-            <a class="email-link" href="mailto:benjtherien@gmail.com">benjtherien@gmail.com</a>
+            <a class="email-link" href="mailto:codec-fm-neurips-2026@googlegroups.com">codec-fm-neurips-2026@googlegroups.com</a>
         </div>
     </div>
 </section>
 
 <footer>
     <div class="wrap">
-        <span class="mark">CODEC-FoMo · NeurIPS 2026</span>
-        <span>December 11 or 12, 2026 · ICC Sydney, Australia</span>
-        <a href="mailto:benjtherien@gmail.com">Contact</a>
+        <span class="mark">CODEC-FM · NeurIPS 2026</span>
+        <span>December 11 or 12, 2026 · Sydney, Australia</span>
+        <a href="mailto:codec-fm-neurips-2026@googlegroups.com">Contact</a>
     </div>
 </footer>
 
